@@ -1,0 +1,10 @@
+1.2.0 (2016-04-12)
+    - Added support for Magento Swatches module.
+    - Added support for Magento Configurable Product module.
+    - Added improvements for Magic360 and MagicZoomPlus can be used together on the product page.
+    - Added improvements for Magic360 and original gallery can be used together on the product page.
+1.1.0 (2016-03-21)
+    - Added improvements for better working of the modules with each other.
+    - Added Magic360 module for Magento 2.
+1.0.0 (2016-02-19)
+    - Modules for Magento 2 created (MagicScroll, MagicSlideshow, MagicZoom, MagicZoomPlus, MagicThumb).

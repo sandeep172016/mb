@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Product view
+-->
+ 
+<catalog_product_view translate="label">
+    <block type="catalog/product_view" name="product.info.options.wrapper.bottom" as="product_options_wrapper_bottom" template="catalog/product/view/options/wrapper/bottom.phtml" translate="label">
+       <label>Bottom Block Options Wrapper</label>
+            <action method="insert"><block>product.tierprices</block></action>
+            <block type="catalog/product_view" name="product.clone_prices" as="prices" template="catalog/product/view/price_clone.phtml"/>
+            <action method="append"><block>product.info.addtocart</block></action>
+            <action method="append"><block>product.info.addto</block></action>
+        </block>
+        
+        <block type="catalog/product_view_tabs" name="product.info.tabs" as="info_tabs" template="catalog/product/view/tabs.phtml">
+    <action method="addTab" translate="title" module="catalog">
+        <alias>description</alias>
+        <title>Description</title>
+        <block>catalog/product_view_description</block>
+        <template>catalog/product/view/description.phtml</template>
+    </action>
+    <action method="addTab" translate="title" module="catalog">
+        <alias>additional</alias>
+        <title>Additional Information</title>
+        <block>catalog/product_view_attributes</block>
+        <template>catalog/product/view/attributes.phtml</template>
+    </action>
+</block>

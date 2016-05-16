@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page layout="2columns-left" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+<body>
+<!-- this is code to add new tab start -->
+<referenceBlock name="product.info.details">
+<block class="Magento\Catalog\Block\Product\View" name="deliveryinfo.tab" as="deliveryinfo" template="product/view/delivery_info.phtml" group="detailed_info" >
+<arguments>
+<argument translate="true" name="title" xsi:type="string">Delivery Information</argument>
+</arguments>
+</block>
+</referenceBlock>
+<!-- this is code to add new tab end -->
+</body>
+</page>
